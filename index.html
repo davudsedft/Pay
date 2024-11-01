@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>انتخاب کنید:</h1>
-    <button onclick="showOptions()">انتخاب کنید</button>
-    <div id="options" style="display: none;">
-        <button onclick="showMessage('گزینه اول انتخاب شد')">گزینه اول</button>
-        <button onclick="showMessage('گزینه دوم انتخاب شد')">گزینه دوم</button>
-        <button onclick="showMessage('گزینه سوم انتخاب شد')">گزینه سوم</button>
+    <div class="container">
+        <h1>انتخاب کنید:</h1>
+        <button id="selectButton" onclick="showOptions()">انتخاب کنید</button>
+        <div id="options" class="options" style="display: none;">
+            <button onclick="showMessage('گزینه اول انتخاب شد', 'گزینه اول')">گزینه اول</button>
+            <button onclick="showMessage('گزینه دوم انتخاب شد', 'گزینه دوم')">گزینه دوم</button>
+            <button onclick="showMessage('گزینه سوم انتخاب شد', 'گزینه سوم')">گزینه سوم</button>
+        </div>
+        <div id="messageContainer" style="display: none;">
+            <p id="message"></p>
+            <button onclick="copyText()">کپی</button>
+        </div>
     </div>
-    <div id="messageContainer" style="display: none;">
-        <p id="message"></p>
-        <button onclick="copyText()">کپی</button>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
-
