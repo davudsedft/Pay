@@ -2,9 +2,11 @@ function showOptions() {
     document.getElementById('options').style.display = 'block';
 }
 
-function showMessage(message) {
+function showMessage(message, buttonText) {
     document.getElementById('message').textContent = message;
     document.getElementById('messageContainer').style.display = 'block';
+    document.getElementById('selectButton').textContent = buttonText;
+    document.getElementById('options').style.display = 'none';
 }
 
 function copyText() {
