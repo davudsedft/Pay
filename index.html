@@ -13,7 +13,7 @@
             background: #e0f7fa;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 10px; /* کاهش padding برای یکسان‌سازی */
+            padding: 20px;
         }
         .container {
             text-align: center;
@@ -33,7 +33,14 @@
             display: block;
             font-weight: bold;
         }
-        select, button {
+        select {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
             margin-top: 10px;
             padding: 10px;
             width: 100%;
@@ -66,6 +73,7 @@
             border-radius: 5px;
             text-decoration: none;
             display: block;
+            box-sizing: border-box;
         }
         .purchase-button:hover {
             background: #0277bd;
@@ -83,6 +91,7 @@
             border-radius: 5px;
             text-decoration: none;
             display: block;
+            box-sizing: border-box;
         }
         .crypto-button:hover {
             background: #00897b;
@@ -94,11 +103,11 @@
         <h1>برای حمایت از ما</h1>
         <p>میتوانین بصورت ارز دیجیتال یا پرداخت ریالی از ما حمایت کنید.</p>
         
-        <div>
-            <a href="https://purnet.ir/coffe/buy/" >خرید بستنی🍨 - 20000 تومان</a>
-            <a href="https://purnet.ir/coffe/buy2/" class="purchase-button">خرید قهوه☕ - 40000 تومان</a>
-            <a href="https://purnet.ir/coffe/buy3/" class="purchase-button">خرید اکبرجوجه🍗 - 60000 تومان</a>
-            <a href="https://purnet.ir/coffe/buy4/" class="purchase-button">خرید پیتزا🍪 - 80000 تومان</a>
+        <div class="button-purchase">
+            <a href="https://purnet.ir/coffe/buy/" class="button-purchase">خرید بستنی🍨 - 20000 تومان</a>
+            <a href="https://purnet.ir/coffe/buy2/" class="button-purchase">خرید قهوه☕ - 40000 تومان</a>
+            <a href="https://purnet.ir/coffe/buy3/" class="button-purchase">خرید اکبرجوجه🍗 - 60000 تومان</a>
+            <a href="https://purnet.ir/coffe/buy4/" class="button-purchase">خرید پیتزا🍪 - 80000 تومان</a>
         </div>
         
         <div class="crypto-section">
