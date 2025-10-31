@@ -2,6 +2,7 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=https://purnet.ir/donate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>انتقال تتر (USDT)</title>
     <style>
@@ -100,53 +101,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>برای حمایت از ما</h1>
-        <p>میتوانین بصورت ارز دیجیتال یا پرداخت ریالی از من حمایت کنید.</p>
-                <p>میتونین از این منو یچیزی برام خرید کنین😊</p>
-
-        <div class="purchase-buttons">
-            <a href="https://zarinp.al/469469" class="crypto-button">خرید بستنی🍨 - 30000 تومان</a>
-            <a href="https://zarinp.al/479256" class="crypto-button">خرید قهوه☕ - 60000 تومان</a>
-            <a href="https://zarinp.al/487078" class="crypto-button">خرید اکبرجوجه🍗 - 80000 تومان</a>
-            <a href="https://zarinp.al/487095" class="crypto-button">خرید پیتزا🍪 - 100000 تومان</a>
-        </div>
-        
-        <div class="crypto-section">
-            <h2>انتقال تتر (USDT):</h2>
-            <label for="options">Network Chain (شبکه انتقال):</label>
-            <select id="options" onchange="showOptionMessage()">
-                <option value="شبکه صحیح انتخاب کنید">انتخاب کنید</option>
-                <option value="TUiB9rH8biUxy2shTqWpSUykxfBaBmq32L">TRC20</option>
-                <option value="0x3fA7bFA97132Dc120075a54709c521fe4569dE28">(BEP20) Binance Smart Chain</option>
-                <option value="0x3fA7bFA97132Dc120075a54709c521fe4569dE28">Arbitrum One</option>
-            </select>
-            <div id="messageContainer" class="messageContainer">
-                <label for="wallet">کیف پول:</label>
-                <p id="message"></p>
-                <button onclick="copyText()" class="button-purchase">کپی</button>
-            </div>
-        </div>
+        <h1>در حال انتقال...</h1>
+        <p>در حال انتقال به صفحه حمایت در <a href="https://purnet.ir/donate">purnet.ir/donate</a></p>
     </div>
-    <script>
-        function showOptionMessage() {
-            var options = document.getElementById("options");
-            var messageContainer = document.getElementById("messageContainer");
-            var message = document.getElementById("message");
-            
-            if (options.value === "شبکه صحیح انتخاب کنید") {
-                messageContainer.style.display = "none";
-            } else {
-                message.textContent = options.value;
-                messageContainer.style.display = "block";
-            }
-        }
-
-        function copyText() {
-            var message = document.getElementById("message");
-            navigator.clipboard.writeText(message.textContent).then(function() {
-                alert("متن کپی شد!");
-            });
-        }
-    </script>
 </body>
 </html>
